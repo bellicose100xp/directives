@@ -1,0 +1,13 @@
+<span class="glyphicon glyphicon-remove"
+      style="cursor: pointer"
+      ng-click="rf.startRemove()"
+      ng-hide="rf.removing"></span>
+
+<div ng-show="rf.removing">
+    <button
+            class="btn btn-xs btn-success"
+            ng-click="rf.removeFriend(friend)">Remove Friend</button>
+    <button
+            class="btn btn-xs btn-danger"
+            ng-click="rf.cancelRemove()">Never Mind!</button>
+</div>

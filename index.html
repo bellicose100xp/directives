@@ -15,7 +15,10 @@
     <!--Controller-->
     <script src="app.js"></script>
 </head>
-<body ng-controller="myController as mc">
-    <user-info-card></user-info-card>
+
+<body ng-controller="myController as mc" class="container">
+    <user-info-card user="mc.user1" collapsed="true"></user-info-card>
+    <user-info-card user="mc.user2"></user-info-card>
 </body>
+
 </html>

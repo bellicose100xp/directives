@@ -1,0 +1,11 @@
+<div ng-click="ad.collapseAddress()" ng-hide="ad.collapsed">
+<h4>Address</h4>
+Street: {{user.address.street}}<br>
+City: {{user.address.city}}<br>
+Zip: {{user.address.zip}}<br>
+</div>
+
+<div ng-click="ad.expandAddress()" ng-show="ad.collapsed">
+    <h4>Address</h4>
+    {{user.address.zip}}...
+</div>
